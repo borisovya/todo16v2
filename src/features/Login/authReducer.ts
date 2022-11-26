@@ -1,8 +1,5 @@
-import {AnyAction, Dispatch} from "redux";
-import {
-    setAppStatusAC,
-    setIsInitializedAC,
-} from "../../app/app-reducer";
+import { Dispatch} from "redux";
+import {setAppStatusAC} from "../../app/app-reducer";
 import {authAPI, LoginParamsType, StatusCode} from "../../api/todolists-api";
 import {handleServerAppError, handleServerNetworkError} from "../../utils/error-utils";
 import {AxiosError} from "axios";
@@ -23,7 +20,6 @@ const slice = createSlice({
     }
 })
 
-type InitialStateType = typeof initialState
 
 export const authReducer = slice.reducer
 export const setIsLoggedInAC = slice.actions.setIsLoggedInAC
