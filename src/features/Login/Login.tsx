@@ -22,7 +22,7 @@ type FormikErrorType = {
 
 export const Login = () => {
 
-    const isLoggedIn = useSelector<AppRootStateType, boolean>((state)=>state.auth.isLoggedIn)
+    const isLoggedIn = useSelector<AppRootStateType, boolean>((state) => state.auth.isLoggedIn)
     const dispatch = useDispatch()
 
     const formik = useFormik({
@@ -53,7 +53,7 @@ export const Login = () => {
         },
     });
 
-    if(isLoggedIn) {
+    if (isLoggedIn) {
         return <Navigate to={'/'}/>
     }
 

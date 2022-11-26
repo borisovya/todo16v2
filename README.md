@@ -1,6 +1,6 @@
 Hello,
 
-This is simple ToDo list App.
+This is a simple ToDo list App.
 
 To log in get registered here: https://social-network.samuraijs.com
 
