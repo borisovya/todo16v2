@@ -41,8 +41,8 @@ export const Login = () => {
             }
             if (!values.password) {
                 errors.password = 'Required';
-            } else if (values.password.length < 5) {
-                errors.password = 'Must be min 5 characters';
+            } else if (values.password.length < 4) {
+                errors.password = 'Must be min 4 characters';
             }
             return errors
         },
